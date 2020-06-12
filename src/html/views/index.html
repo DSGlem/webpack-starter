@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <body>
+    <% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+    _.template(require('./../includes/head.html').default)(data) %> <%=
+    _.template(require('./../includes/header.html').default)(data) %>
+
+    <div class="container">
+      dsfsdfsdf
+    </div>
+
+    <%= _.template(require('./../includes/footer.html').default)(data) %>
+  </body>
+</html>
