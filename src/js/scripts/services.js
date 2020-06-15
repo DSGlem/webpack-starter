@@ -1,10 +1,8 @@
-import $ from "jquery";
+import Flickity from "flickity";
 
-
-$('.services-slider').flickity({
-    // options
-    cellAlign: 'left',
-    contain: true
-  });
-
-  export default {};
+const elem = document.querySelector(".main-carousel");
+const flkty = new Flickity(elem, {
+  // options
+  cellAlign: "left",
+  contain: true,
+});
