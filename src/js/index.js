@@ -1,3 +1,4 @@
 import "./scripts/header";
-// import "./scripts/hero";
-// import "./scripts/services";
+import "./scripts/hero";
+import "./scripts/services";
+
