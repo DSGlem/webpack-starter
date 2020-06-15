@@ -6,67 +6,81 @@ body {
   font-size: 10px;
   font-family: Aeroport;
 }
-  .section-title {
-    color: $color-text-title;
-    font-size: 2.8rem;
-    font-weight: 700;
-    line-height: 1.125em;
-    @include media-breakpoint-up(xl) {
-      font-family: "Aeroport Medium";
-      font-size: 4.8rem;
-    }
-  }
-  .pattern {
-    width: 19.6rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(-3.5rem) translateX(-4rem);
-  }
-  .section-subtitle {
-    position: relative;
-    color: #13bf9c;
-    font-size: 1.2rem;
-    letter-spacing: .16rem;
-    text-transform: uppercase;
-    .pattern {
-      display: none;
-      @include media-breakpoint-up(xl) {
-        display: block;
-      }
-    }
-    @include media-breakpoint-up(xl) {
-      font-size: 1.5rem;
-      letter-spacing: .2rem;
-      }
-  }
-  .section-text {
-    color: $color-text;
-    font-size: 16px;
-    line-height: 1.5em;
-  }
 
-  .btn-primary{
-    width: 20rem;
-    height: 4.8rem;
-    color: #ffffff;
+.section-title {
+  color: $color-text-title;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.125em;
+  @include media-breakpoint-up(xl) {
     font-family: "Aeroport Medium";
-    font-size: 1.6rem;
-    font-weight: 500;
-    background-color: $color-accent;
-    border-radius: 0.5rem;
-    border-color: $color-accent;
+    font-size: 4.8rem;
+  }
+}
+.pattern {
+  width: 19.6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-3.5rem) translateX(-4rem);
+}
+.section-subtitle {
+  position: relative;
+  color: #13bf9c;
+  font-size: 1.2rem;
+  letter-spacing: .16rem;
+  text-transform: uppercase;
+  .pattern {
+    display: none;
     @include media-breakpoint-up(xl) {
-        width: 220px;
-        height: 54px;
-        border-radius: 8px;
-      font-size: 1.8rem;
+      display: block;
     }
   }
+  @include media-breakpoint-up(xl) {
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    }
+}
+.section-text {
+  color: $color-text;
+  font-size: 16px;
+  line-height: 1.5em;
+}
 
-
-  .marquee {
-    width: 300px; /* the plugin works for responsive layouts so width is not necessary */
-    overflow: hidden;
-    border:1px solid #ccc;
+.btn-primary{
+  width: 20rem;
+  height: 4.8rem;
+  color: #ffffff;
+  font-family: "Aeroport Medium";
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-color: $color-accent;
+  border-radius: 0.5rem;
+  border-color: $color-accent;
+  @include media-breakpoint-up(xl) {
+      width: 220px;
+      height: 54px;
+      border-radius: 8px;
+    font-size: 1.8rem;
   }
+}
+
+
+.marquee {
+  width: 300px; /* the plugin works for responsive layouts so width is not necessary */
+  overflow: hidden;
+  border:1px solid #ccc;
+}
+
+
+.social-container {
+  display: flex;
+  .social-link {
+    color: $color-text-secondary;
+    font-family: "Aeroport Medium";
+    font-size: 1.8rem;
+    &:not(:first-of-type) {
+      margin-left: 4rem;
+    }
+  }
+}
