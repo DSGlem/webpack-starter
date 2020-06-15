@@ -1,0 +1,89 @@
+.how-it-works {
+    padding: 4.8rem 0;
+    background-color: #f6f7f8;
+    @include media-breakpoint-up(lg){
+        padding: 11rem 10rem;
+    }
+    .container {
+        @include media-breakpoint-up(lg){
+            max-width: 148rem;
+        }
+    }
+    .row {
+        margin-top: 3.3rem;
+        @include media-breakpoint-up(lg) {
+            margin-top: 5rem;
+        }
+    }
+    .section-title {
+        text-align: center;
+        @include media-breakpoint-up(lg) {
+            margin-left: 4rem;
+            text-align: left;
+        }
+    }
+    .card-list {
+        display: flex;
+        flex-direction: column;
+        .card {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            background-color: unset;
+            border: none;
+            &:not(:first-of-type) {
+                margin-top: 4rem;
+                @include media-breakpoint-up(md) {
+                    margin-top: 0;
+                }
+            }
+            .step {
+                min-width: 5.5rem;
+                margin-right: 2rem;
+                font-size: 9.5rem;
+                line-height: 0.6em;
+                color: #13bf9c;
+                opacity: 0.1;
+                text-align: right;
+                @include media-breakpoint-up(lg) {
+                    min-width: 8.5rem;
+                    font-size: 13.5rem;
+                }
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 6.4rem;
+                height: 6.4rem;
+                background-color: rgba(19, 191, 156, 0.1);
+                border-radius: .8rem;
+                img {
+                    height: 3.2rem;
+                }
+            }
+            .card-title {
+                margin-top: 1.8rem;
+                margin-bottom: .7rem;
+                color: #1f1f1f;
+                font-family: "Aeroport Medium";
+                font-size: 2.2rem;
+                font-weight: 500;
+                line-height: 1.18em;
+            }
+            .card-text {
+                margin-bottom: 2rem;
+                color: #626262;
+                font-family: Aeroport;
+                font-size: 1.4rem;
+                line-height: 1.57em;
+            }
+        }
+
+    }
+}
