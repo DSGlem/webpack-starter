@@ -1,4 +1,4 @@
 import "./scripts/header";
-import "./scripts/hero";
+import "./scripts/ticker";
 import "./scripts/services";
 
