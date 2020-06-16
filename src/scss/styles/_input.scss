@@ -1,0 +1,19 @@
+.input, .select {
+    color: $color-text-secondary;
+    font-size: 1.6rem;
+
+    border-radius: 8px;
+    border: 1px solid #dadada;
+    outline: none;
+    &:focus {
+        border-color: $color-text-title;
+    }
+}
+
+.input {
+    padding: 1.2rem 1.6rem; 
+}
+
+$color-track: #dadada;
+$color-thumb: #ffffff;
+$color-progress: #13BF9C;

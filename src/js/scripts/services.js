@@ -1,4 +1,4 @@
-import slick from "slick-carousel";
+// import slick from "slick-carousel";
 
-$(".services-slider").slick();
+// $(".services-slider").slick();
     
