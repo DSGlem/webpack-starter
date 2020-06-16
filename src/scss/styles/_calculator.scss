@@ -1,0 +1,20 @@
+.calculator {
+    .section-text {
+        margin-top: 1.4rem;
+        color: $color-text-secondary;
+    }
+    .btn-primary {
+        margin-top: 2rem;
+    }
+    .calculator-container {
+        margin: 0 1.5rem;
+        margin-top: 3rem;
+        padding: 3rem 1.5rem;
+
+        box-shadow: .4rem .4rem 3.2rem -.4rem rgba(40, 75, 68, 0.15);
+        border-radius: .8rem;
+        .calc-input {
+            width: 100%;
+        }
+    }
+}

@@ -1,8 +1,4 @@
-import Flickity from "flickity";
+import slick from "slick-carousel";
 
-const elem = document.querySelector(".main-carousel");
-const flkty = new Flickity(elem, {
-  // options
-  cellAlign: "left",
-  contain: true,
-});
+$(".services-slider").slick();
+    
