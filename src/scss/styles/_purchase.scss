@@ -1,0 +1,40 @@
+.purchase-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.purchase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .purchase_title {
+    margin-top: 1.5rem;
+    font-family: "Aeroport Medium";
+  }
+  .purchase_subtitle {
+    font-size: 1.6rem;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  .input-row {
+    margin-top: 1.5rem;
+  }
+  .purchase-card {
+    width: 26rem;
+  }
+  .purchase-date {
+    width: 5.5rem;
+    margin-right: 0.8rem;
+  }
+  .purchase-cvv2 {
+    width: 13rem;
+  }
+  .purchase_form-submit {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+}

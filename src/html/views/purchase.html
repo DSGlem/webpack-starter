@@ -1,17 +1,62 @@
-<div class="modal-layout">
-  <div class="modal-container modal-pay">
-    <h5 class="section-title">Оплата</h5>
-    <p class="section-subtitle">Моя гражданская позиция - 299 грн.</p>
-    <form>
-      <div>
-        <input type="number" placeholder="XXXX XXXX XXXX XXXX" />
-      </div>
-      <div>
-        <input type="number" lenght="2" placeholder="XX" />
-        <input type="number" lenght="2" placeholder="XX" />
-        <input type="number" lenght="3" placeholder="CVV2" />
-      </div>
-      <button class="btn btn-primary btn-pay" type="submit">Оплатить</button>
-    </form>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="ru">
+  <body>
+    <div class="wrapper">
+      <header class="header-container">
+        <%= _.template(require('./../includes/header.html').default)(data) %>
+      </header>
+      <main class="main-container purchase-page">
+        <% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+        _.template(require('./../includes/head.html').default)(data) %>
+
+        <div class="purchase-container">
+          <div class="purchase">
+            <h5 class="section-title purchase_title">Оплата</h5>
+            <p class="section-subtitle purchase_subtitle">
+              Моя гражданская позиция - 299 грн.
+            </p>
+            <form class="purchase-form">
+              <div class="input-row">
+                <input
+                  class="input-style purchase-card"
+                  type="number"
+                  size="16"
+                  placeholder="XXXX XXXX XXXX XXXX"
+                />
+              </div>
+              <div class="input-row">
+                <input
+                  class="input-style purchase-date"
+                  type="number"
+                  size="2"
+                  placeholder="XX"
+                />
+                <input
+                  class="input-style purchase-date"
+                  type="number"
+                  size="2"
+                  placeholder="XX"
+                />
+                <input
+                  class="input-style purchase-cvv2"
+                  type="number"
+                  size="3"
+                  placeholder="CVV2"
+                />
+              </div>
+              <button
+                class="btn btn-primary purchase_form-submit"
+                type="submit"
+              >
+                Оплатить
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="footer-container">
+        <%= _.template(require('./../includes/footer.html').default)(data) %>
+      </footer>
+    </div>
+  </body>
+</html>
