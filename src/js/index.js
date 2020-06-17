@@ -8,3 +8,5 @@ import "./scripts/services";
 import "./scripts/toggle";
 import "./scripts/calculator";
 import "./scripts/review";
+
+import "./scripts/modal";
