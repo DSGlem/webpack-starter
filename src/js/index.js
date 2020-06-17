@@ -1,6 +1,3 @@
-//libs
-import "slick-carousel";
-
 //my files
 import "./scripts/header";
 import "./scripts/ticker";

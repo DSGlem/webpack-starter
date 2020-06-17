@@ -1,8 +1,6 @@
 const path = require("path");
 const fs = require("fs");
-const {
-  CleanWebpackPlugin
-} = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -41,10 +39,12 @@ const config = {
     ],
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.(sass|scss)$/,
         include: path.resolve(__dirname, "src/scss"),
-        use: [{
+        use: [
+          {
             loader: MiniCssExtractPlugin.loader,
             options: {},
           },
@@ -94,7 +94,8 @@ const config = {
       filename: "./css/style.bundle.css",
     }),
     new CopyPlugin({
-      patterns: [{
+      patterns: [
+        {
           from: "./src/fonts",
           to: "./fonts",
         },
@@ -107,10 +108,6 @@ const config = {
           to: "./img",
         },
       ],
-    }),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
     }),
   ].concat(htmlPlugins),
 };

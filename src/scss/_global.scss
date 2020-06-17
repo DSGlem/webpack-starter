@@ -2,11 +2,14 @@
 
 html {
   font-size: 10px;
+  @media (min-width: 1920px) {
+    font-size: 13px;
+  }
 }
 
 body {
-  font-size: 10px;
-  font-family: Aeroport;
+  font-size: 1.6rem;
+  font-family: "Aeroport", "sans-serif";
 }
 
 .section-title {
@@ -15,7 +18,7 @@ body {
   font-weight: 700;
   line-height: 1.125em;
 
-  @include media-breakpoint-up(xl) {
+  @media (min-width: 1200px) {
     font-family: "Aeroport Medium";
     font-size: 4.8rem;
   }
@@ -39,12 +42,12 @@ body {
   .pattern {
     display: none;
 
-    @include media-breakpoint-up(xl) {
+    @media (min-width: 1200px) {
       display: block;
     }
   }
 
-  @include media-breakpoint-up(xl) {
+  @media (min-width: 1200px) {
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
   }
@@ -52,11 +55,11 @@ body {
 
 .section-text {
   color: $color-text;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.5em;
 }
 
-.btn-primary {
+.custom-button {
   width: 20rem;
   height: 4.8rem;
   color: #ffffff;
@@ -67,10 +70,12 @@ body {
   border-radius: 0.5rem;
   border: none;
   overflow: hidden;
-
+  span {
+    color: #fff;
+  }
   &:hover {
     span {
-      animation: appearance 0.3s linear;
+      animation: appearance 0.8s ease-in-out;
     }
   }
 
@@ -82,7 +87,7 @@ body {
     background-color: $color-accent;
   }
 
-  @include media-breakpoint-up(xl) {
+  @media (min-width: 1200px) {
     width: 220px;
     height: 54px;
     border-radius: 8px;
@@ -123,8 +128,9 @@ body {
   bottom: -5rem;
   right: 50%;
   transform: translateX(-50%);
+  width: 48px;
 
-  @include media-breakpoint-up(lg) {
+  @media (min-width: 992px) {
     top: unset;
     left: unset;
     bottom: -5rem;
@@ -139,31 +145,27 @@ body {
 
 .slick-prev {
   transform: scale(-1, 1);
-  margin-left: -3rem;
+  // margin-left: -3rem;
 
-  @include media-breakpoint-up(lg) {
+  @media (min-width: 992px) {
     margin-left: unset;
     right: 8rem;
   }
 }
 
 .slick-next {
-  margin-right: -3rem;
-
-  @include media-breakpoint-up(lg) {
-    // bottom: -3rem;
+  @media (min-width: 992px) {
     margin-right: unset;
   }
 }
 
-// .slick-prev {
-//   left: unset;
-//   right: 8rem;
-//   transform: scale(-1, 1);
-// }
-// .slick-next {
-//   bottom: -3rem;
-// }
+.slick-prev {
+  left: unset;
+  right: 11rem;
+  transform: scale(-1, 1);
+}
+.slick-next {
+}
 
 @keyframes appearance {
   from {

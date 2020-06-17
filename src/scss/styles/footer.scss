@@ -1,19 +1,20 @@
-.footer-container {}
+.footer-container {
+}
 
 .footer {
-    max-width: 156rem;
-    margin: 0 auto;
-    padding: 1.4rem 0;
-    display: flex;
-    flex-direction: column;
+  max-width: 156rem;
+  margin: 0 auto;
+  padding: 1.4rem 0;
+  display: flex;
+  flex-direction: column;
 
-    justify-content: space-between;
+  justify-content: space-between;
 
-    .section-text {
-        margin-bottom: 0;
-    }
+  .section-text {
+    margin-bottom: 0;
+  }
 
-    @include media-breakpoint-up(md) {
-        flex-direction: row;
-    }
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }

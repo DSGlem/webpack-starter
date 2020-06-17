@@ -1,17 +1,23 @@
 <div class="calculator">
   <div class="container">
-
     <div class="description">
       <h3 class="section-title">Калькулятор</h3>
       <p class="section-text">
         С помощью калькулятора вы можете рассчитать примерную выгоду
       </p>
-      <button class="btn btn-primary"><span>Оставить заявку</span></button>
+      <div class="calculator-btn-box">
+        <button class="btn custom-button"><span>Оставить заявку</span></button>
+      </div>
     </div>
     <div class="calculator-container">
       <div class="calculator-inputs">
         <div class="group debt">
-          <input class="input amount" value="0" type="number" />
+          <input
+            id="debt"
+            class="input amount"
+            type="number"
+            placeholder="Сумма задолженности"
+          />
         </div>
         <div class="group debt-type">
           <select class="select form-control" id="exampleFormControlSelect1">
@@ -23,38 +29,45 @@
           </select>
         </div>
         <div class="group delay-value">
-          <p class="range-placeholder">Срок просрочки в днях <img class="tooltip"
-              src="../../../img/icon-question@2x.png"></p>
+          <p class="range-placeholder">
+            Срок просрочки в днях
+            <img class="tooltip" src="./img/icon-question@2x.png" />
+          </p>
+
           <div class="range-mark">
-            <span>0</span><span>90</span><span>180-365</span><span>Более 365</span>
+            <span>0</span><span>90</span><span>180-365</span
+            ><span>Более 365</span>
           </div>
-          <input class="range" type="range" min="1" max="800" value="0" id="customRange1" />
+
+          <div id="days"></div>
         </div>
         <div class="group installment-lenght">
           <p class="range-placeholder">Рассрочка в месяцах</p>
           <div class="range-mark">
-            <span>0</span><span>1</span><span>3</span><span>6</span><span>12</span>
+            <span>0</span><span>3</span><span>6</span><span>9</span
+            ><span>12</span>
           </div>
-          <input class="range" type="range" min="1" max="5" value="0" id="customRange1" />
+
+          <div id="month"></div>
         </div>
       </div>
       <div class="calculator-outputs">
         <p class="title">Выгода</p>
         <div class="output-item">
           <p class="placeholder">Будет списано:</p>
-          <p class="output">70%*</p>
+          <p class="output output-percent"></p>
         </div>
         <div class="output-item">
           <p class="placeholder">Остаток по долгу:</p>
-          <p class="output">7 500 руб.*</p>
+          <p class="output debt-value"></p>
         </div>
         <div class="output-item">
           <p class="placeholder">Рассрочка:</p>
-          <p class="output">На 3 месяца</p>
+          <p class="output">На <span class="installment-plan" ></span> месяц(а/ев)</p>
         </div>
         <div class="output-item">
           <p class="placeholder">Платёж в месяц:</p>
-          <p class="output">2 500 руб.*</p>
+          <p class="output payment-in-month"></p>
         </div>
         <div class="output-item total">
           <p class="placeholder">Ваша экономия:</p>
