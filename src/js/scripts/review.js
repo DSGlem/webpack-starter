@@ -1,14 +1,16 @@
-$(".services-slider").slick({
+$(".review-slider").slick({
   // normal options...
   infinite: false,
-  slidesToShow: 3,
+  slidesToShow: 2,
   prevArrow: $(".slick-prev"),
   nextArrow: $(".slick-next"),
   // the magic
   responsive: [
     {
-      breakpoint: 991.98,
-      settings: "unslick",
+      breakpoint: 767.98,
+      settings: {
+        slidesToShow: 1,
+      },
     },
   ],
 });
