@@ -28,7 +28,7 @@ body {
   position: relative;
   color: #13bf9c;
   font-size: 1.2rem;
-  letter-spacing: .16rem;
+  letter-spacing: 0.16rem;
   text-transform: uppercase;
   .pattern {
     display: none;
@@ -38,8 +38,8 @@ body {
   }
   @include media-breakpoint-up(xl) {
     font-size: 1.5rem;
-    letter-spacing: .2rem;
-    }
+    letter-spacing: 0.2rem;
+  }
 }
 .section-text {
   color: $color-text;
@@ -47,7 +47,7 @@ body {
   line-height: 1.5em;
 }
 
-.btn-primary{
+.btn-primary {
   width: 20rem;
   height: 4.8rem;
   color: #ffffff;
@@ -58,16 +58,12 @@ body {
   border-radius: 0.5rem;
   border-color: $color-accent;
   @include media-breakpoint-up(xl) {
-      width: 220px;
-      height: 54px;
-      border-radius: 8px;
+    width: 220px;
+    height: 54px;
+    border-radius: 8px;
     font-size: 1.8rem;
   }
 }
-
-
-
-
 
 .social-container {
   display: flex;
@@ -79,4 +75,34 @@ body {
       margin-left: 4rem;
     }
   }
+}
+
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled {
+  svg {
+    -webkit-clip-path: inset(0 0% 0% 35%);
+    clip-path: inset(0 0% 0% 35%);
+  }
+  path {
+    fill: $color-text-secondary;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  top: unset;
+  bottom: -2rem;
+  right: 6rem;
+  display: none;
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}
+.slick-prev {
+  left: unset;
+  right: 8rem;
+  transform: scale(-1, 1);
+}
+.slick-next {
+  bottom: -3rem;
 }

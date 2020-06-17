@@ -1,53 +1,66 @@
 .services-container {
-    padding-top: 4.8rem;
-    padding-bottom: 6rem;
-    overflow: hidden;
+  padding-top: 4.8rem;
+  padding-bottom: 6rem;
+  @include media-breakpoint-up(lg) {
+    padding: 11rem 0 11rem;
+  }
 }
 .services {
-    .section-title {
-        position: relative;
-        margin-bottom: 3.3rem;
-        text-align: center;
-        .pattern {
-            width: 12rem;
-            transform: translateY(-1.5rem) translateX(-6rem);
-        }
+  position: relative;
+  .section-title {
+    position: relative;
+    margin-bottom: 3.3rem;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      margin-left: 8rem;
+      text-align: left;
     }
-    .card {
-        padding: 2rem 3rem;
-        /* Style for "Rectangle" */
-        box-shadow: .4rem .4rem 3.2rem -.4rem rgba(40, 75, 68, 0.15);
-        border-radius: .8rem;
-        border: none;
-        // @include media-breakpoint-up(md) {
-        //     width: 30%;
-        // }
+    .pattern {
+      width: 12rem;
+      transform: translateY(-1.5rem) translateX(-6rem);
+    }
+  }
+  .slick-list {
+    padding: 2rem;
+    margin: 0 3rem;
+  }
+  .slick-slide {
+    margin-left: 3rem;
+  }
+  .card:not(:first-of-type) {
+    margin-top: 3rem;
+  }
+  .card {
+    padding: 2rem 3rem;
+    box-shadow: 0.4rem 0.4rem 3.2rem -0.4rem rgba(40, 75, 68, 0.15);
+    border-radius: 0.8rem;
+    border: none;
+    @include media-breakpoint-up(md) {
+      margin: 0;
+    }
 
-        &:not(:first-of-type) {
-            margin-top: 3rem;
-        }
-        .card-title {
-            margin-bottom: 1.5rem;
-            color: #1f1f1f;
-            font-family: "Aeroport Medium";
-            font-size: 2.2rem;
-            font-weight: 500;
-            line-height: 1.18em;
-        }
-        .card-text {
-            margin-bottom: 2rem;
-            color: #626262;
-            font-family: Aeroport;
-            font-size: 1.4rem;
-            line-height: 1.57em;
-        }
-        .card-price {
-            margin-bottom: 2.3rem;
-            color: #13bf9c;
-            font-family: "Aeroport Medium";
-            font-size: 2.8rem;
-            font-weight: 500;
-            line-height: 1.28em;
-        }
+    .card-title {
+      margin-bottom: 1.5rem;
+      color: #1f1f1f;
+      font-family: "Aeroport Medium";
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 1.18em;
     }
+    .card-text {
+      margin-bottom: 2rem;
+      color: #626262;
+      font-family: Aeroport;
+      font-size: 1.4rem;
+      line-height: 1.57em;
+    }
+    .card-price {
+      margin-bottom: 2.3rem;
+      color: #13bf9c;
+      font-family: "Aeroport Medium";
+      font-size: 2.8rem;
+      font-weight: 500;
+      line-height: 1.28em;
+    }
+  }
 }
