@@ -10,3 +10,5 @@ import "./scripts/calculator";
 import "./scripts/review";
 
 import "./scripts/modal";
+
+import "./scripts/rangeInput";

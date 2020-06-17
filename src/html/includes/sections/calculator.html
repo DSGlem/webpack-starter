@@ -1,79 +1,69 @@
 <div class="calculator">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h3 class="section-title">Калькулятор</h3>
-        <p class="section-text">
-          С помощью калькулятора вы можете рассчитать примерную выгоду
-        </p>
-        <button class="btn btn-primary"><span>Оставить заявку</span></button>
+
+    <div class="description">
+      <h3 class="section-title">Калькулятор</h3>
+      <p class="section-text">
+        С помощью калькулятора вы можете рассчитать примерную выгоду
+      </p>
+      <button class="btn btn-primary"><span>Оставить заявку</span></button>
+    </div>
+    <div class="calculator-container">
+      <div class="calculator-inputs">
+        <div class="group debt">
+          <input class="input amount" value="0" type="number" />
+        </div>
+        <div class="group debt-type">
+          <select class="select form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="group delay-value">
+          <p class="range-placeholder">Срок просрочки в днях <img class="tooltip"
+              src="../../../img/icon-question@2x.png"></p>
+          <div class="range-mark">
+            <span>0</span><span>90</span><span>180-365</span><span>Более 365</span>
+          </div>
+          <input class="range" type="range" min="1" max="800" value="0" id="customRange1" />
+        </div>
+        <div class="group installment-lenght">
+          <p class="range-placeholder">Рассрочка в месяцах</p>
+          <div class="range-mark">
+            <span>0</span><span>1</span><span>3</span><span>6</span><span>12</span>
+          </div>
+          <input class="range" type="range" min="1" max="5" value="0" id="customRange1" />
+        </div>
       </div>
-      <div class="col-md-6 calculator-container">
-        <div class="calculator-inputs">
-          <div class="group debt">
-            <input class="input amount" value="0" type="number" />
-          </div>
-          <div class="group debt-type">
-            <select class="select form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="group delay-value">
-            <p class="placeholder">Рассрочка в месяцах</p>
-            <div class="range-mark">
-              <span>0</span><span>90</span><span>180-365</span
-              ><span>Более 365</span>
-            </div>
-            <div id="slider"></div>
-          </div>
-          <div class="group installment-lenght">
-            <p class="placeholder">Рассрочка в месяцах</p>
-            <div class="range-mark">
-              <span>0</span><span>1</span><span>1</span><span>3</span
-              ><span>6</span><span>12</span>
-            </div>
-            <input
-              class="range"
-              type="range"
-              min="1"
-              max="12"
-              value="0"
-              class="custom-range"
-              id="customRange1"
-            />
-          </div>
+      <div class="calculator-outputs">
+        <p class="title">Выгода</p>
+        <div class="output-item">
+          <p class="placeholder">Будет списано:</p>
+          <p class="output">70%*</p>
         </div>
-        <div class="calculator-outputs">
-          <p class="title">Выгода</p>
-          <div class="output-item">
-            <p class="placeholder">Будет списано:</p>
-            <p class="output">70%*</p>
-          </div>
-          <div class="output-item">
-            <p class="placeholder">Остаток по долгу:</p>
-            <p class="output">7 500 руб.*</p>
-          </div>
-          <div class="output-item">
-            <p class="placeholder">Рассрочка:</p>
-            <p class="output">На 3 месяца</p>
-          </div>
-          <div class="output-item">
-            <p class="placeholder">Платёж в месяц:</p>
-            <p class="output">2 500 руб.*</p>
-          </div>
-          <div class="output-item total">
-            <p class="placeholder">Ваша экономия:</p>
-            <p class="output">17 500 руб.*</p>
-          </div>
-          <p class="note">
-            * — Процент и сумма может варьироваться в зависимости от предложения
-            кредитора.
-          </p>
+        <div class="output-item">
+          <p class="placeholder">Остаток по долгу:</p>
+          <p class="output">7 500 руб.*</p>
         </div>
+        <div class="output-item">
+          <p class="placeholder">Рассрочка:</p>
+          <p class="output">На 3 месяца</p>
+        </div>
+        <div class="output-item">
+          <p class="placeholder">Платёж в месяц:</p>
+          <p class="output">2 500 руб.*</p>
+        </div>
+        <div class="output-item total">
+          <p class="placeholder">Ваша экономия:</p>
+          <p class="output">17 500 руб.*</p>
+        </div>
+        <p class="note">
+          * — Процент и сумма может варьироваться в зависимости от предложения
+          кредитора.
+        </p>
       </div>
     </div>
   </div>

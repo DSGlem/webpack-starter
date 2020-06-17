@@ -13,10 +13,8 @@
 }
 
 .input {
-    // width: 100%;
     padding: 1.2rem 1.6rem;
     color: $color-text-secondary;
-
     font-size: 1.6rem;
 
     &::placeholder {
@@ -27,3 +25,8 @@
 $color-track: #dadada;
 $color-thumb: #ffffff;
 $color-progress: #13BF9C;
+
+
+input[type=range] {
+    width: 100%;
+}

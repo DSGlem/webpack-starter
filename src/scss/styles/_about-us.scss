@@ -4,40 +4,53 @@
     background-color: $color-bg-secondary;
     overflow-x: hidden;
 }
+
 .about-us {
-    display:flex;
+    display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
     max-width: 168rem;
+
     @include media-breakpoint-up(lg) {
         flex-direction: row;
     }
+
     @include media-breakpoint-up(lg) {
         padding-top: 7.5rem;
         padding-bottom: 7.5rem;
     }
+
     .wrapper {
         max-width: 156rem;
     }
+
     .content {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
         @include media-breakpoint-up(xl) {
             margin-left: 7rem;
             margin-top: -5rem;
         }
+
         .section-title {
             margin-top: 1rem;
+
+            @include media-breakpoint-down(xl) {
+                font-size: 2.8rem
+            }
         }
+
         .section-text {
             margin-top: 1.6rem;
+
             // max-width: 34.5rem;
             @include media-breakpoint-up(lg) {
-              max-width: 44.5rem;
+                max-width: 44.5rem;
             }
         }
     }

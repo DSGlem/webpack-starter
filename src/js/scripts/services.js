@@ -5,9 +5,14 @@ $(".services-slider").slick({
   prevArrow: $(".slick-prev"),
   nextArrow: $(".slick-next"),
   // the magic
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 991.98,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 767.98,
       settings: "unslick",
     },
   ],

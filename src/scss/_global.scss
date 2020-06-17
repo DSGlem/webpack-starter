@@ -1,7 +1,9 @@
 @import "./variables";
+
 html {
   font-size: 10px;
 }
+
 body {
   font-size: 10px;
   font-family: Aeroport;
@@ -9,14 +11,16 @@ body {
 
 .section-title {
   color: $color-text-title;
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-weight: 700;
   line-height: 1.125em;
+
   @include media-breakpoint-up(xl) {
     font-family: "Aeroport Medium";
     font-size: 4.8rem;
   }
 }
+
 .pattern {
   width: 19.6rem;
   position: absolute;
@@ -24,23 +28,28 @@ body {
   left: 0;
   transform: translateY(-3.5rem) translateX(-4rem);
 }
+
 .section-subtitle {
   position: relative;
   color: #13bf9c;
   font-size: 1.2rem;
   letter-spacing: 0.16rem;
   text-transform: uppercase;
+
   .pattern {
     display: none;
+
     @include media-breakpoint-up(xl) {
       display: block;
     }
   }
+
   @include media-breakpoint-up(xl) {
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
   }
 }
+
 .section-text {
   color: $color-text;
   font-size: 16px;
@@ -58,17 +67,21 @@ body {
   border-radius: 0.5rem;
   border: none;
   overflow: hidden;
+
   &:hover {
     span {
       animation: appearance 0.3s linear;
     }
   }
+
   span {
     display: block;
   }
+
   &:hover {
     background-color: $color-accent;
   }
+
   @include media-breakpoint-up(xl) {
     width: 220px;
     height: 54px;
@@ -79,10 +92,12 @@ body {
 
 .social-container {
   display: flex;
+
   .social-link {
     color: $color-text-secondary;
     font-family: "Aeroport Medium";
     font-size: 1.8rem;
+
     &:not(:first-of-type) {
       margin-left: 4rem;
     }
@@ -95,6 +110,7 @@ body {
     -webkit-clip-path: inset(0 0% 0% 35%);
     clip-path: inset(0 0% 0% 35%);
   }
+
   path {
     fill: $color-text-secondary;
   }
@@ -107,6 +123,7 @@ body {
   bottom: -5rem;
   right: 50%;
   transform: translateX(-50%);
+
   @include media-breakpoint-up(lg) {
     top: unset;
     left: unset;
@@ -114,20 +131,25 @@ body {
     right: 6rem;
     transform: unset;
   }
+
   &:before {
     content: unset;
   }
 }
+
 .slick-prev {
   transform: scale(-1, 1);
   margin-left: -3rem;
+
   @include media-breakpoint-up(lg) {
     margin-left: unset;
     right: 8rem;
   }
 }
+
 .slick-next {
   margin-right: -3rem;
+
   @include media-breakpoint-up(lg) {
     // bottom: -3rem;
     margin-right: unset;
@@ -148,24 +170,29 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
+
   50% {
     transform: translateY(-50px);
     opacity: 0;
   }
+
   51% {
     transform: translateY(50px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
   }
 }
+
 @keyframes appearanceBottom {
   from {
     transform: translateY(50px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;

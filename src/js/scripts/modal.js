@@ -8,15 +8,3 @@ for (item of closeBtn) {
         layout.classList.remove("visible");
     })
 }
-
-// closeBtn.forEach((item) => {
-//             item.addEventListener("click", function () {
-//                 const layout = this.parent.parent;
-//                 layout.classList.remove(".visible");
-//             })
-
-
-// closeBtn.addEventListener("click", function () {
-//     const layout = this.parent.parent;
-//     layout.classList.remove(".visible");
-// })
