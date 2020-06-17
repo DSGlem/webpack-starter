@@ -1,118 +1,123 @@
 .calculator {
-    position: relative;
-    top: -5rem;
+  position: relative;
+  top: -5rem;
 
-    .container {
-        @include media-breakpoint-up(xl) {
-            display: flex;
-        }
+  .container {
+    @include media-breakpoint-up(xl) {
+      display: flex;
+    }
+  }
+
+  .description {
+    align-self: center;
+  }
+
+  .section-text {
+    margin-top: 1.4rem;
+    color: $color-text-secondary;
+  }
+
+  .calculator-dropdown {
+    width: 300px;
+    height: 40px;
+  }
+
+  .btn-primary {
+    margin-top: 1rem;
+  }
+
+  .calculator-container {
+    margin-top: 3rem;
+    padding: 3rem 1.5rem;
+
+    box-shadow: 0.4rem 0.4rem 3.2rem -0.4rem rgba(40, 75, 68, 0.15);
+    border-radius: 0.8rem;
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      justify-content: space-between;
+      padding: 4rem;
     }
 
-    .description {
-        align-self: center;
+    .input {
+      width: 100%;
     }
 
-    .section-text {
-        margin-top: 1.4rem;
-        color: $color-text-secondary;
+    .debt-type {
+      margin-top: 1.5rem;
     }
 
-    .btn-primary {
-        margin-top: 1rem;
+    .dalay-value {
+      margin-top: 1.5rem;
     }
 
-    .calculator-container {
-        margin-top: 3rem;
-        padding: 3rem 1.5rem;
+    .range-mark {
+      padding: 0 0.5rem;
+      display: flex;
+      justify-content: space-between;
 
-        box-shadow: .4rem .4rem 3.2rem -.4rem rgba(40, 75, 68, 0.15);
-        border-radius: .8rem;
-
-        @include media-breakpoint-up(xl) {
-            display: flex;
-            justify-content: space-between;
-            padding: 4rem;
-        }
-
-        .input {
-            width: 100%;
-        }
-
-        .debt-type {
-            margin-top: 1.5rem;
-        }
-
-        .dalay-value {
-            margin-top: 1.5rem;
-        }
-
-        .range-mark {
-            padding: 0 0.5rem;
-            display: flex;
-            justify-content: space-between;
-
-            span {
-                color: $color-text-title;
-                font-size: 1.4rem;
-            }
-        }
-
-        .range-placeholder {
-            margin-top: 1rem;
-            color: $color-text-title;
-            font-size: 2rem;
-        }
+      span {
+        color: $color-text-title;
+        font-size: 1.4rem;
+      }
     }
 
-    .calculator-inputs {
-        @include media-breakpoint-up(xl) {
-            padding: 0;
-            width: 49%;
-        }
+    .range-placeholder {
+      margin-top: 1rem;
+      color: $color-text-title;
+      font-size: 2rem;
+    }
+  }
+
+  .calculator-inputs {
+    @include media-breakpoint-up(xl) {
+      padding: 0;
+      width: 49%;
+    }
+  }
+
+  .calculator-outputs {
+    @include media-breakpoint-up(xl) {
+      width: 46%;
     }
 
-    .calculator-outputs {
-        @include media-breakpoint-up(xl) {
-            width: 46%;
-        }
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
 
-        margin-top: 1.5rem;
-        font-size: 1.6rem;
-
-        .output-item {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .title {
-            color: $color-text-title;
-            font-size: 2.4rem;
-        }
-
-        .placeholder {
-            margin-bottom: 0.5rem;
-            color: $color-text-title;
-        }
-
-        .output {
-            margin-bottom: 0.5rem;
-            font-size: 1.6rem;
-            color: $color-accent;
-        }
-
-        .total {
-            .placeholder {
-                font-family: "Aeroport Medium";
-            }
-
-            font-size: 1.8rem;
-        }
-
-        .note {
-            margin-top: 1rem;
-            margin-left: 1.5rem;
-            color: $color-text-secondary;
-            font-size: 1.4rem;
-        }
+    .output-item {
+      display: flex;
+      justify-content: space-between;
     }
+
+    .title {
+      color: $color-text-title;
+      font-size: 2.4rem;
+    }
+
+    .placeholder {
+      margin-bottom: 0.5rem;
+      color: $color-text-title;
+    }
+
+    .output {
+      margin-bottom: 0.5rem;
+      font-size: 1.6rem;
+      color: $color-accent;
+    }
+
+    .total {
+      .placeholder {
+        font-family: "Aeroport Medium";
+      }
+
+      font-size: 1.8rem;
+    }
+
+    .note {
+      margin-top: 1rem;
+      margin-left: 1.5rem;
+      color: $color-text-secondary;
+      font-size: 1.4rem;
+    }
+  }
 }

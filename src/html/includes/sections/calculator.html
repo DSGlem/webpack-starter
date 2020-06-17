@@ -1,6 +1,5 @@
 <div class="calculator">
   <div class="container">
-
     <div class="description">
       <h3 class="section-title">Калькулятор</h3>
       <p class="section-text">
@@ -14,28 +13,66 @@
           <input class="input amount" value="0" type="number" />
         </div>
         <div class="group debt-type">
-          <select class="select form-control" id="exampleFormControlSelect1">
+          <!-- <select class="select form-control" id="exampleFormControlSelect1">
             <option>1</option>
             <option>2</option>
             <option>3</option>
             <option>4</option>
             <option>5</option>
-          </select>
+          </select> -->
+          <div class="dropdown">
+            <div
+              class="btn btn-secondary dropdown-toggle"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Тип задолжености
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <div class="dropdown-item">1</div>
+              <div class="dropdown-item">2</div>
+              <div class="dropdown-item">3</div>
+              <div class="dropdown-item">4</div>
+              <div class="dropdown-item">5</div>
+            </div>
+          </div>
         </div>
         <div class="group delay-value">
-          <p class="range-placeholder">Срок просрочки в днях <img class="tooltip"
-              src="../../../img/icon-question@2x.png"></p>
+          <p class="range-placeholder">
+            Срок просрочки в днях
+            <img class="tooltip" src="../../../img/icon-question@2x.png" />
+          </p>
+
           <div class="range-mark">
-            <span>0</span><span>90</span><span>180-365</span><span>Более 365</span>
+            <span>0</span><span>90</span><span>180-365</span
+            ><span>Более 365</span>
           </div>
-          <input class="range" type="range" min="1" max="800" value="0" id="customRange1" />
+          <input
+            class="range"
+            type="range"
+            min="1"
+            max="800"
+            value="0"
+            id="customRange1"
+          />
         </div>
         <div class="group installment-lenght">
           <p class="range-placeholder">Рассрочка в месяцах</p>
           <div class="range-mark">
-            <span>0</span><span>1</span><span>3</span><span>6</span><span>12</span>
+            <span>0</span><span>1</span><span>3</span><span>6</span
+            ><span>12</span>
           </div>
-          <input class="range" type="range" min="1" max="5" value="0" id="customRange1" />
+          <input
+            class="range"
+            type="range"
+            min="1"
+            max="5"
+            value="0"
+            id="customRange1"
+          />
         </div>
       </div>
       <div class="calculator-outputs">

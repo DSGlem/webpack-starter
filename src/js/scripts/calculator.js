@@ -1,7 +1,9 @@
-import 'jquery-ui';
+$(".dropdown-toggle").click(function () {
+  $(this).next().css({ display: "block" });
+});
 
-// $('#slider').slider({
-//     animate: "fast"
-//   });
-
-//   console.log($('#slider'));
+$(".dropdown-item").click(function () {
+  const val = $(this).text();
+  $(".dropdown-input").val(val);
+  $(".dropdown-menu").css({ display: "none" });
+});
