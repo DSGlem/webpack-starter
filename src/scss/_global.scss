@@ -56,7 +56,19 @@ body {
   font-weight: 500;
   background-color: $color-accent;
   border-radius: 0.5rem;
-  border-color: $color-accent;
+  border: none;
+  overflow: hidden;
+  &:hover {
+    span {
+      animation: appearance 0.3s linear;
+    }
+  }
+  span {
+    display: block;
+  }
+  &:hover {
+    background-color: $color-accent;
+  }
   @include media-breakpoint-up(xl) {
     width: 220px;
     height: 54px;
@@ -130,3 +142,32 @@ body {
 // .slick-next {
 //   bottom: -3rem;
 // }
+
+@keyframes appearance {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  51% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes appearanceBottom {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
