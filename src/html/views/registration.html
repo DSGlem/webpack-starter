@@ -1,25 +1,25 @@
 <!DOCTYPE html>
+<% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+_.template(require('./../includes/head.html').default)(data) %>
+
 <html lang="ru">
   <body>
     <header class="header-container">
       <%= _.template(require('./../includes/header.html').default)(data) %>
     </header>
-    <main class="main-container registration-page">
-      <% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
-      _.template(require('./../includes/head.html').default)(data) %>
-
-      <div class="registartion-step">
-        <h5 class="section-title registartion_title">Личные данные</h5>
+    <main class="registration-page">
+      <div class="registration-step personal-data">
+        <h5 class="section-title registration_title">Личные данные</h5>
         <p class="section-text registration-text">
           Петров Пётр Петрович, осталось совсем немного до завершения
           регистрации
         </p>
-        <form class="registartion-form">
+        <form class="registration-form">
           <input
-            class="input-style registartion-input"
+            class="input-style registration-input"
             placeholder="Дата рождения"
           />
-          <div class="registratin-passport">
+          <div class="registration-passport">
             <p class="group-text">Образец паспорта</p>
             <div class="radio-group">
               <label class="custom-radio"
@@ -35,27 +35,27 @@
             </div>
           </div>
           <input
-            class="input-style registartion-input"
+            class="input-style registration-input"
             placeholder="№ документа"
           />
           <input
-            class="input-style registartion-input"
+            class="input-style registration-input"
             placeholder="№ документа"
           />
           <input
-            class="input-style registartion-input"
+            class="input-style registration-input"
             placeholder="Действует до"
           />
           <input
-            class="input-style registartion-input"
+            class="input-style registration-input"
             placeholder="Орган выдачи"
           />
-          <input class="input-style registartion-input" placeholder="ИНН" />
+          <input class="input-style registration-input" placeholder="ИНН" />
           <button
-            class="btn btn-primary registartion_form-submit"
+            class="btn custom-button registration_form-submit"
             type="submit"
           >
-            Продолжить
+            <span>Продолжить</span>
           </button>
         </form>
         <div class="step">
