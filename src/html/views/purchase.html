@@ -1,62 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+  _.template(require('./../includes/head.html').default)(data) %>
   <body>
     <div class="wrapper">
       <header class="header-container">
         <%= _.template(require('./../includes/header.html').default)(data) %>
       </header>
-      <main class="main-container purchase-page">
-        <% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
-        _.template(require('./../includes/head.html').default)(data) %>
-
-        <div class="purchase-container">
-          <div class="purchase">
-            <h5 class="section-title purchase_title">Оплата</h5>
-            <p class="section-subtitle purchase_subtitle">
-              Моя гражданская позиция - 299 грн.
-            </p>
-            <form class="purchase-form">
-              <div class="input-row">
-                <input
-                  class="input-style purchase-card"
-                  type="number"
-                  size="16"
-                  placeholder="XXXX XXXX XXXX XXXX"
-                />
-              </div>
-              <div class="input-row">
-                <input
-                  class="input-style purchase-date"
-                  type="number"
-                  size="2"
-                  placeholder="XX"
-                />
-                <input
-                  class="input-style purchase-date"
-                  type="number"
-                  size="2"
-                  placeholder="XX"
-                />
-                <input
-                  class="input-style purchase-cvv2"
-                  type="number"
-                  size="3"
-                  placeholder="CVV2"
-                />
-              </div>
-              <button
-                class="btn btn-primary purchase_form-submit"
-                type="submit"
-              >
+      <div class="purchase-container">
+        <div class="purchase">
+          <h5 class="section-title purchase_title">Оплата</h5>
+          <p class="section-subtitle purchase_subtitle">
+            Моя гражданская позиция - 299 грн.
+          </p>
+          <form class="purchase-form">
+            <div class="input-row">
+              <input
+                class="input-style purchase-card"
+                placeholder="XXXX XXXX XXXX XXXX"
+              />
+            </div>
+            <div class="input-row">
+              <input class="input-style purchase-date" placeholder="XX" />
+              <input class="input-style purchase-date" placeholder="XX" />
+              <input class="input-style purchase-cvv2" placeholder="CVV2" />
+            </div>
+            <button
+              class="btn custom-button purchase_form-submit"
+              type="submit"
+            >
+              <span>
                 Оплатить
-              </button>
-            </form>
-          </div>
+              </span>
+            </button>
+          </form>
         </div>
-      </main>
-      <footer class="footer-container">
-        <%= _.template(require('./../includes/footer.html').default)(data) %>
-      </footer>
+      </div>
     </div>
   </body>
 </html>

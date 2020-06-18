@@ -33,7 +33,7 @@
     box-shadow: 0.4rem 0.4rem 3.2rem -0.4rem rgba(40, 75, 68, 0.15);
     border-radius: 0.8rem;
 
-    @include media-breakpoint-up(xl) {
+    @media (min-width: 1200px) {
       display: flex;
       justify-content: space-between;
       padding: 4rem;
@@ -70,14 +70,14 @@
   }
 
   .calculator-inputs {
-    @include media-breakpoint-up(xl) {
+    @media (min-width: 1200px) {
       padding: 0;
       width: 49%;
     }
   }
 
   .calculator-outputs {
-    @include media-breakpoint-up(xl) {
+    @media (min-width: 1200px) {
       width: 46%;
     }
 
@@ -114,11 +114,10 @@
     }
   }
 
-    .note {
-      margin-top: 1rem;
-      margin-left: 1.5rem;
-      color: $color-text-secondary;
-      font-size: 1.4rem;
-    }
+  .note {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    color: $color-text-secondary;
+    font-size: 1.4rem;
   }
 }
