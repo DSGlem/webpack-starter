@@ -1,0 +1,27 @@
+.contact-info {
+
+    .form-column {
+        &:not(:first-of-type) {
+            margin-left: 3rem;
+        }
+    }
+
+    .registration-form {
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    .registration_submit-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .registration_form-submit {
+        order: 1;
+        width: 26rem;
+    }
+}

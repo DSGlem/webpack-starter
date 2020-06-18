@@ -7,9 +7,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   .registration_title {
     text-align: center;
   }
+
   .registration-text {
     width: 31.5rem;
     margin-top: 1rem;
@@ -22,51 +24,53 @@
     font-size: 1.4rem;
     line-height: 1.57em;
   }
+
   .form-column {
     max-width: 26rem;
   }
+
   .registration-form {
     display: flex;
     flex-direction: column;
   }
+
   .registration-input {
     width: 260px;
+
     &:not(:first-of-type) {
       margin-top: 1.5rem;
     }
   }
+
   .registration-passport {
     margin-top: 1.3rem;
 
     .radio-group {
       display: flex;
+
       .custom-radio:last-of-type {
         margin-left: 4.2rem;
       }
     }
   }
+
   .group-text {
     margin-bottom: 0.4rem;
     font-size: 1.6rem;
   }
+
   .registration_form-submit {
     width: 100%;
     margin-top: 1.5rem;
   }
 }
-.contact-info {
-  .registration-form {
-    @media (min-width: 768px) {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-  }
-}
+
 
 .step {
   margin-top: 3rem;
   padding-bottom: 6rem;
   text-align: center;
+
   @media (min-width: 998px) {
     margin-top: 9rem;
   }
@@ -76,6 +80,7 @@
     width: 31.5rem;
     height: 0.2rem;
     background-color: rgba(19, 191, 156, 0.4);
+
     &:after {
       content: "";
       position: absolute;
@@ -85,6 +90,7 @@
       background-color: $color-accent;
     }
   }
+
   .progress-2 {
     &:after {
       width: 66%;
@@ -130,7 +136,7 @@
 // }
 
 /* When the radio button is checked, add a blue background */
-.custom-radio input:checked ~ .checkmark {
+.custom-radio input:checked~.checkmark {
   background-color: $color-accent;
 }
 
@@ -142,12 +148,12 @@
 }
 
 /* Show the indicator (dot/circle) when checked */
-.custom-radio input:checked ~ .checkmark:after {
+.custom-radio input:checked~.checkmark:after {
   display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.custom-radio input:checked ~ .checkmark:after {
+.custom-radio input:checked~.checkmark:after {
   top: 2px;
   left: 5px;
   display: inline-block;

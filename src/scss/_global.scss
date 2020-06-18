@@ -12,6 +12,7 @@ body {
 
 html {
   font-size: 10px;
+
   @media (min-width: 1920px) {
     font-size: 13px;
   }
@@ -92,11 +93,14 @@ body {
   border-radius: 0.5rem;
   border: none;
   overflow: hidden;
+
   span {
     color: #fff;
   }
+
   &:hover {
     color: #fff;
+
     span {
       animation: appearance 0.8s ease-in-out;
     }
@@ -195,12 +199,83 @@ body {
   &::placeholder {
     color: $color-text-secondary;
   }
+
   &:focus {
     outline: none;
     border: 0.1rem solid black;
   }
+
   @media (min-width: 768px) {
     height: 5.4rem;
+  }
+}
+
+.dropdown {
+  font-size: 1.6rem;
+
+  .btn-secondary.dropdown-toggle {
+    position: relative;
+    width: 100%;
+    padding: 1.4rem 1.6rem;
+
+    color: $color-text-secondary;
+    background-color: $color-bg;
+    font-size: 1.6rem;
+    text-align: left;
+
+    border-radius: 0.8rem;
+    border: 0.1rem solid $color-input-border;
+    background-color: $color-bg;
+
+    &:active {
+      color: currentColor;
+      background-color: unset;
+      border-color: currentColor;
+    }
+
+    &:after {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+
+      display: block;
+      width: 1.2rem;
+      height: 1.2rem;
+
+      border-color: currentColor;
+      border-width: 0.1rem;
+      border-right: unset;
+      transform: rotate(-135deg);
+    }
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    top: -8px;
+    margin-top: -0.8rem;
+    border-top: unset;
+    border-radius: 0 0 0.8rem 0.8rem;
+
+    .dropdown-item {
+      padding: 1.4rem 1.6rem;
+
+      color: $color-text-title;
+      font-size: 1.6rem;
+
+      border-top: 0.1rem solid $color-input-border;
+
+      &:first-of-type {
+        margin-top: 3px;
+      }
+    }
+
+  }
+}
+
+//range picker
+.ui-widget {
+  .ui-widget-content {
+    border: none;
   }
 }
 

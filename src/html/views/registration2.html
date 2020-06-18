@@ -3,172 +3,136 @@
 _.template(require('./../includes/head.html').default)(data) %>
 
 <html lang="ru">
-  <body>
-    <header class="header-container">
-      <%= _.template(require('./../includes/header.html').default)(data) %>
-    </header>
-    <main class="main-container registration-page">
-      <div class="registration-step contact-info">
-        <h5 class="section-title registration_title">Контактная информация</h5>
-        <p class="section-text registration-text">
-          Петров Пётр Петрович, осталось совсем немного до завершения
-          регистрации
-        </p>
-        <form class="registration-form">
-          <div class="form-column">
-            <p class="group-text">Адрес регистрации</p>
-            <div class="dropdown">
-              <div
-                class="btn btn-secondary dropdown-toggle"
-                role="button"
-                id="dropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Область
-              </div>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <div class="dropdown-item">1</div>
-                <div class="dropdown-item">2</div>
-                <div class="dropdown-item">3</div>
-                <div class="dropdown-item">4</div>
-                <div class="dropdown-item">5</div>
-              </div>
-            </div>
-            <div class="dropdown">
-              <div
-                class="btn btn-secondary dropdown-toggle"
-                role="button"
-                id="dropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Город
-              </div>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <div class="dropdown-item">1</div>
-                <div class="dropdown-item">2</div>
-                <div class="dropdown-item">3</div>
-                <div class="dropdown-item">4</div>
-                <div class="dropdown-item">5</div>
-              </div>
-            </div>
-            <p class="group-text">Улица/проспект, переулок, площадь</p>
-            <div class="radio-group">
-              <label class="custom-radio"
-                >Ул./пр.
-                <input type="radio" checked="checked" name="radio" />
-                <span class="checkmark"></span>
-              </label>
-              <label class="custom-radio"
-                >Пер.
-                <input type="radio" name="radio" />
-                <span class="checkmark"></span>
-              </label>
-              <label class="custom-radio"
-                >Пл.
-                <input type="radio" name="radio" />
-                <span class="checkmark"></span>
-              </label>
-            </div>
-            <div class="form-group">
-              <input
-                class="input-style registration-input"
-                placeholder="Название"
-              />
-              <div class="input-row">
-                <input class="input-style persoanl-input" placeholder="Дом" />
-                <input class="input-style persoanl-input" placeholder="Корп." />
-                <input class="input-style persoanl-input" placeholder="Кв." />
-              </div>
-            </div>
-          </div>
-          <div class="form-column">
-            <p class="group-text">Адрес регистрации</p>
-            <div class="dropdown">
-              <div
-                class="btn btn-secondary dropdown-toggle"
-                role="button"
-                id="dropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Область
-              </div>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <div class="dropdown-item">1</div>
-                <div class="dropdown-item">2</div>
-                <div class="dropdown-item">3</div>
-                <div class="dropdown-item">4</div>
-                <div class="dropdown-item">5</div>
-              </div>
-            </div>
-            <div class="dropdown">
-              <div
-                class="btn btn-secondary dropdown-toggle"
-                role="button"
-                id="dropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Город
-              </div>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <div class="dropdown-item">1</div>
-                <div class="dropdown-item">2</div>
-                <div class="dropdown-item">3</div>
-                <div class="dropdown-item">4</div>
-                <div class="dropdown-item">5</div>
-              </div>
-            </div>
-            <p class="group-text">Улица/проспект, переулок, площадь</p>
-            <div class="radio-group">
-              <label class="custom-radio"
-                >Ул./пр.
-                <input type="radio" checked="checked" name="radio" />
-                <span class="checkmark"></span>
-              </label>
-              <label class="custom-radio"
-                >Пер.
-                <input type="radio" name="radio" />
-                <span class="checkmark"></span>
-              </label>
-              <label class="custom-radio"
-                >Пл.
-                <input type="radio" name="radio" />
-                <span class="checkmark"></span>
-              </label>
-            </div>
-            <div class="form-group">
-              <input
-                class="input-style registration-input"
-                placeholder="Название"
-              />
-              <div class="input-row">
-                <input class="input-style persoanl-input" placeholder="Дом" />
-                <input class="input-style persoanl-input" placeholder="Корп." />
-                <input class="input-style persoanl-input" placeholder="Кв." />
-              </div>
-            </div>
-          </div>
 
-          <button
-            class="btn custom-button registration_form-submit"
-            type="submit"
-          >
+<body>
+  <header class="header-container">
+    <%= _.template(require('./../includes/header.html').default)(data) %>
+  </header>
+  <main class="main-container registration-page">
+    <div class="registration-step contact-info">
+      <h5 class="section-title registration_title">Контактная информация</h5>
+      <p class="section-text registration-text">
+        Петров Пётр Петрович, осталось совсем немного до завершения
+        регистрации
+      </p>
+      <form class="registration-form">
+        <div class="form-column">
+          <p class="group-text">Адрес регистрации</p>
+          <div class="dropdown">
+            <div class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Область
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <div class="dropdown-item">1</div>
+              <div class="dropdown-item">2</div>
+              <div class="dropdown-item">3</div>
+              <div class="dropdown-item">4</div>
+              <div class="dropdown-item">5</div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Город
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <div class="dropdown-item">1</div>
+              <div class="dropdown-item">2</div>
+              <div class="dropdown-item">3</div>
+              <div class="dropdown-item">4</div>
+              <div class="dropdown-item">5</div>
+            </div>
+          </div>
+          <p class="group-text">Улица/проспект, переулок, площадь</p>
+          <div class="radio-group">
+            <label class="custom-radio">Ул./пр.
+              <input type="radio" checked="checked" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="custom-radio">Пер.
+              <input type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="custom-radio">Пл.
+              <input type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="form-group">
+            <input class="input-style registration-input" placeholder="Название" />
+            <div class="input-row">
+              <input class="input-style persoanl-input" placeholder="Дом" />
+              <input class="input-style persoanl-input" placeholder="Корп." />
+              <input class="input-style persoanl-input" placeholder="Кв." />
+            </div>
+          </div>
+        </div>
+        <div class="form-column">
+          <p class="group-text">Адрес регистрации</p>
+          <div class="dropdown">
+            <div class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Область
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <div class="dropdown-item">1</div>
+              <div class="dropdown-item">2</div>
+              <div class="dropdown-item">3</div>
+              <div class="dropdown-item">4</div>
+              <div class="dropdown-item">5</div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Город
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <div class="dropdown-item">1</div>
+              <div class="dropdown-item">2</div>
+              <div class="dropdown-item">3</div>
+              <div class="dropdown-item">4</div>
+              <div class="dropdown-item">5</div>
+            </div>
+          </div>
+          <p class="group-text">Улица/проспект, переулок, площадь</p>
+          <div class="radio-group">
+            <label class="custom-radio">Ул./пр.
+              <input type="radio" checked="checked" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="custom-radio">Пер.
+              <input type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="custom-radio">Пл.
+              <input type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="form-group">
+            <input class="input-style registration-input" placeholder="Название" />
+            <div class="input-row">
+              <input class="input-style persoanl-input" placeholder="Дом" />
+              <input class="input-style persoanl-input" placeholder="Корп." />
+              <input class="input-style persoanl-input" placeholder="Кв." />
+            </div>
+          </div>
+        </div>
+        <div class="registration_submit-wrapper">
+          <button class="btn custom-button registration_form-submit" type="submit">
             <span>Продолжить</span>
           </button>
-        </form>
-
-        <div class="step">
-          <p class="group-text">Шаг 2 из 3</p>
-          <div class="progress progress-2"></div>
         </div>
+      </form>
+
+      <div class="step">
+        <p class="group-text">Шаг 2 из 3</p>
+        <div class="progress progress-2"></div>
       </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
+
 </html>
