@@ -1,7 +1,7 @@
 .how-it-works {
   padding: 4.8rem 0 11rem 0;
   background-color: #f6f7f8;
-  @include media-breakpoint-up(lg) {
+  @media (min-width: 992px) {
     padding: 11rem 10rem 21rem 10rem;
   }
   @media (min-width: 1200px) {
@@ -19,24 +19,24 @@
     }
   }
   .container {
-    @include media-breakpoint-up(lg) {
+    @media (min-width: 992px) {
       max-width: 148rem;
       padding: 0;
     }
   }
   .row {
     margin-top: 3.3rem;
-    @include media-breakpoint-up(md) {
+    @media (min-width: 768px) {
       margin-bottom: 10rem;
     }
-    @include media-breakpoint-up(lg) {
+    @media (min-width: 992px) {
       margin-top: 5rem;
       margin-bottom: 5rem;
     }
   }
   .section-title {
     text-align: center;
-    @include media-breakpoint-up(lg) {
+    @media (min-width: 992px) {
       text-align: left;
     }
   }
@@ -51,13 +51,13 @@
       border: none;
       &:not(:first-of-type) {
         margin-top: 4rem;
-        @include media-breakpoint-up(md) {
+        @media (min-width: 768px) {
           margin-top: 0;
         }
       }
       &:nth-of-type(1),
       &:nth-of-type(2) {
-        @include media-breakpoint-up(md) {
+        @media (min-width: 768px) {
           margin-bottom: 4rem;
         }
         @media (min-width: 1200px) {
@@ -72,7 +72,7 @@
         color: #13bf9c;
         opacity: 0.1;
         text-align: right;
-        @include media-breakpoint-up(md) {
+        @media (min-width: 768px) {
           min-width: 7.5rem;
         }
         @media (min-width: 1200) {

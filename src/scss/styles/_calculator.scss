@@ -3,7 +3,7 @@
   top: -5rem;
 
   .container {
-    @include media-breakpoint-up(xl) {
+    @media (min-width: 1200px) {
       display: flex;
     }
   }
@@ -112,6 +112,7 @@
 
       font-size: 1.8rem;
     }
+  }
 
     .note {
       margin-top: 1rem;

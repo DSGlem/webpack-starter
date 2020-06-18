@@ -1,8 +1,13 @@
 .hero-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
   background-color: $color-bg;
   overflow-x: hidden;
+  min-height: calc(100vh - 70px);
+  height: 100%;
 }
 .hero {
   display: flex;
@@ -11,63 +16,99 @@
   align-items: center;
   padding-top: 2rem;
   max-width: 168rem;
-  @include media-breakpoint-up(lg) {
+  width: 100%;
+  @media (min-width: 992px) {
     flex-direction: row-reverse;
-  }
-  @include media-breakpoint-up(lg) {
     padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    justify-content: flex-end;
   }
   .hero-desktop {
     width: 100%;
     display: none;
-    @include media-breakpoint-up(md) {
+    @media (min-width: 768px) {
       display: block;
     }
-    // @include media-breakpoint-up(xl) {
-    //   top: -121px;
-    //   left: -10rem;
-    //   width: 145%;
-    // }
   }
   .hero-mobile {
-    // margin-top: -8rem;
     width: 100%;
-    @include media-breakpoint-up(md) {
+    @media (min-width: 768px) {
       display: none;
     }
   }
   .wrapper {
     max-width: 156rem;
   }
+  .hero-image {
+    img {
+      width: 100%;
+    }
+    @media (min-width: 992px) {
+      width: 50%;
+    }
+    @media (min-width: 1680px) {
+      position: absolute;
+      right: 0;
+    }
+  }
   .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @include media-breakpoint-up(xl) {
+    padding: 0 1.5rem;
+    @media (min-width: 992px) {
+      width: 50%;
       margin-left: 7rem;
       margin-top: -5rem;
+    }
+    @media (min-width: 1920px) {
+      width: 100%;
     }
     .section-title {
       font-size: 3.2rem;
       font-weight: 700;
       letter-spacing: 0.1rem;
-      @include media-breakpoint-up(xl) {
+      @media (min-width: 1200px) {
         font-size: 4.8rem;
       }
-      @media (min-width:1400px) {
+      @media (min-width: 1400px) {
         font-size: 7.2rem;
       }
     }
     .section-text {
       margin-top: 1.6rem;
       // max-width: 34.5rem;
-      @include media-breakpoint-up(lg) {
+      @media (min-width: 992px) {
         max-width: 44.5rem;
       }
     }
     .call-btn {
-      margin-top:2rem;
+      margin-top: 2rem;
     }
+  }
+}
+.hero-footer {
+  display: none;
+  @media (min-width: 992px) {
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+    padding: 2rem 1.5rem 4rem;
+    max-width: 168rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  @media (min-width: 1620px) {
+    padding-left: calc(50% - 81rem);
+    padding-right: calc(50% - 81rem);
+  }
+}
+.hero-footer-link {
+  color: #bcbcbc;
+  font-family: "Aeroport Medium";
+  font-size: 1.8rem;
+  font-weight: 500;
+  &:not(:first-of-type) {
+    margin-left: 40px;
   }
 }

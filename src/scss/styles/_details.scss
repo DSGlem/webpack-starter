@@ -9,11 +9,11 @@
   border-radius: 1.6rem;
   background-color: #13bf9c;
 
-  @include media-breakpoint-up(lg) {
+  @media (min-width: 992px) {
     flex-direction: row;
     justify-content: space-between;
   }
-  @include media-breakpoint-up(xl) {
+  @media (min-width: 1200px) {
     padding: 5.7rem 18.7rem;
   }
   @media (min-width: 1300px) {
@@ -38,9 +38,11 @@
   .btn-more {
     margin-top: 2rem;
     background-color: $color-bg;
-    color: #13bf9c;
+    span {
+      color: #13bf9c;
+    }
 
-    @include media-breakpoint-up(lg) {
+    @media (min-width: 992px) {
       margin-top: 0rem;
     }
   }
