@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <body>
+    <header class="header-container">
+      <%= _.template(require('./../includes/header.html').default)(data) %>
+    </header>
+    <main class="main-container registration-page">
+      <% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+      _.template(require('./../includes/head.html').default)(data) %>
+
+      <div class="registartion-step">
+        <h5 class="section-title registartion_title">Личные данные</h5>
+        <p class="section-text registration-text">
+          Петров Пётр Петрович, осталось совсем немного до завершения
+          регистрации
+        </p>
+        <form class="registartion-form">
+          <input
+            class="input-style registartion-input"
+            placeholder="Дата рождения"
+          />
+          <div class="registratin-passport">
+            <p class="group-text">Образец паспорта</p>
+            <div class="radio-group">
+              <label class="custom-radio"
+                >Старый
+                <input type="radio" checked="checked" name="radio" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="custom-radio"
+                >Новый
+                <input type="radio" name="radio" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <input
+            class="input-style registartion-input"
+            placeholder="№ документа"
+          />
+          <input
+            class="input-style registartion-input"
+            placeholder="№ документа"
+          />
+          <input
+            class="input-style registartion-input"
+            placeholder="Действует до"
+          />
+          <input
+            class="input-style registartion-input"
+            placeholder="Орган выдачи"
+          />
+          <input class="input-style registartion-input" placeholder="ИНН" />
+          <button
+            class="btn btn-primary registartion_form-submit"
+            type="submit"
+          >
+            Продолжить
+          </button>
+        </form>
+        <div class="step">
+          <p class="group-text">Шаг 1 из 3</p>
+          <div class="progress"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

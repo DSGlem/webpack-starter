@@ -18,17 +18,17 @@ body {
   font-family: Aeroport;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-.main-container {
-  flex: 1 0 auto;
-}
-.footer-container {
-  flex: 0 0 auto;
-}
+// .wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 100%;
+// }
+// .main-container {
+//   flex: 1 0 auto;
+// }
+// .footer-container {
+//   flex: 0 0 auto;
+// }
 
 .section-title {
   color: $color-text-title;
