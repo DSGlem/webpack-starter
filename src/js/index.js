@@ -7,7 +7,3 @@ import "./scripts/calculator";
 import "./scripts/review";
 
 import "./scripts/modal";
-
-import "./scripts/range-slider";
-
-import "./scripts/tooltip";

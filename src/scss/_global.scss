@@ -290,14 +290,15 @@ body {
   }
 }
 
-// .slick-prev {
-//   left: unset;
-//   right: 8rem;
-//   transform: scale(-1, 1);
-// }
-// .slick-next {
-//   bottom: -3rem;
-// }
+.slick-prev {
+  left: unset;
+  right: 8rem;
+  transform: scale(-1, 1);
+}
+
+.slick-next {
+  bottom: -3rem;
+}
 
 @keyframes appearance {
   from {
