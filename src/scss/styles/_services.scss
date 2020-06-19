@@ -2,6 +2,10 @@
   padding-top: 4.8rem;
   padding-bottom: 6rem;
 
+  @media (min-width: 768px) {
+    padding-bottom: 69rem;
+  }
+
   @media (min-width: 992px) {
     padding: 11rem 0 11rem;
   }
@@ -37,6 +41,15 @@
 
   .card:not(:first-of-type) {
     margin-top: 3rem;
+  }
+
+  .services-next,
+  .services-prev {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
   }
 
   .card {
