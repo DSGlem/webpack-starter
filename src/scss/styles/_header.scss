@@ -85,8 +85,8 @@
     transition: all 0.3s;
     transform: translateY(-100%);
 
-    @media (min-width: 992px) {
-      transform: translateY(-100%);
+    @media (min-width: 1200px) {
+      transform: translateY(0%);
     }
 
     @media (min-width: 1200px) {

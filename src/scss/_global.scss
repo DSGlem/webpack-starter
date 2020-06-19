@@ -136,8 +136,8 @@ body {
   }
 }
 
-.slick-prev.slick-disabled,
-.slick-next.slick-disabled {
+.slider-prev.slick-disabled,
+.slider-next.slick-disabled {
   svg {
     -webkit-clip-path: inset(0 0% 0% 35%);
     clip-path: inset(0 0% 0% 35%);
@@ -148,43 +148,29 @@ body {
   }
 }
 
-.slick-prev,
-.slick-next {
+.slider-prev,
+.slider-next {
+  position: absolute;
   top: unset;
   left: unset;
   bottom: -5rem;
   right: 50%;
-  transform: translateX(-50%);
+  transform: translateX(140%);
   width: 48px;
 
-  @media (min-width: 992px) {
-    top: unset;
-    left: unset;
-    bottom: -5rem;
-    right: 6rem;
-    transform: unset;
+  @media (min-width: 768px) {
+    right: 10rem;
   }
 
-  &:before {
-    content: unset;
-  }
+  // &:before {
+  //   content: unset;
+  // }
 }
 
-.slick-prev {
+.slider-prev {
   transform: scale(-1, 1);
-  // margin-left: -3rem;
-
-  @media (min-width: 992px) {
-    margin-left: unset;
-    right: 8rem;
-  }
 }
 
-.slick-next {
-  @media (min-width: 992px) {
-    margin-right: unset;
-  }
-}
 
 .dropdown {
   font-size: 1.6rem;
@@ -290,15 +276,15 @@ body {
   }
 }
 
-.slick-prev {
-  left: unset;
-  right: 8rem;
-  transform: scale(-1, 1);
-}
+// .slick-prev {
+//   left: unset;
+//   right: 8rem;
+//   transform: scale(-1, 1);
+// }
 
-.slick-next {
-  bottom: -3rem;
-}
+// .slick-next {
+//   bottom: -3rem;
+// }
 
 @keyframes appearance {
   from {
