@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html"
+    "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html",
+    "deploy": "firebase deploy"
   },
   "dependencies": {
     "jquery.marquee": "^1.5.0"
