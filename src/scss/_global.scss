@@ -22,18 +22,11 @@ body {
   font-size: 1.6rem;
   font-family: "Aeroport", "sans-serif";
 }
-
-// .wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 100%;
-// }
-// .main-container {
-//   flex: 1 0 auto;
-// }
-// .footer-container {
-//   flex: 0 0 auto;
-// }
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
 
 .section-title {
   color: $color-text-title;
@@ -174,7 +167,6 @@ body {
 .slider-prev {
   transform: scale(-1, 1);
 }
-
 
 .dropdown {
   font-size: 1.6rem;
