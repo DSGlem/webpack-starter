@@ -1,0 +1,117 @@
+$track-height: .4rem;
+
+$thumb-width: 1.6rem;
+$thumb-height: 1.6rem;
+
+$color-track: #dadada;
+$color-thumb: #fff;
+$color-progress: #13bf9c;
+$color-thumb-shadow: rgba(40, 75, 68, 0.25);
+
+
+
+// input[type="range"] {
+//     outline: 0;
+//     border: 0;
+//     border-radius: 500px;
+//     width: 400px;
+//     max-width: 100%;
+//     margin: 24px 0 16px;
+//     transition: box-shadow 0.2s ease-in-out;
+
+//     // Chrome
+//     @media screen and (-webkit-min-device-pixel-ratio:0) {
+//         & {
+//             overflow: hidden;
+//             height: $track-height;
+//             padding: 20px 0;
+//             -webkit-appearance: none;
+//             background-color: $color-track;
+//         }
+
+//         &::-webkit-slider-runnable-track {
+//             height: 40px;
+//             -webkit-appearance: none;
+//             color: #444;
+//             // margin-top: -1px;
+//             transition: box-shadow 0.2s ease-in-out;
+//         }
+
+//         &::-webkit-slider-thumb {
+//             width: $thumb-width;
+//             -webkit-appearance: none;
+//             width: 20px;
+//             height: 20px;
+//             cursor: ew-resize;
+//             background: black;
+//             box-shadow: -340px 0 0 320px $color-progress, inset 0 0 8px $color-thumb-shadow;
+//             border-radius: 50%;
+//             transition: box-shadow 0.2s ease-in-out;
+//             position: relative;
+//             top: 1px;
+//         }
+
+//         &:active::-webkit-slider-thumb {
+//             background: black;
+//             box-shadow: -340px 0 0 320px $color-progress, inset 0 0 8px $color-thumb-shadow;
+//         }
+//     }
+
+//     // Firefox
+//     &::-moz-range-progress {
+//         background-color: $color-progress;
+//     }
+
+//     &::-moz-range-track {
+//         background-color: $color-track;
+//     }
+
+//     // IE
+//     &::-ms-fill-lower {
+//         background-color: $color-progress;
+//     }
+
+//     &::-ms-fill-upper {
+//         background-color: $color-track;
+//     }
+// }
+
+
+.range-slider-container {
+
+    .range-slider {
+        overflow-x: hidden;
+        padding: 1rem 1.1rem;
+
+        .ui-slider {
+            border: none !important;
+            background-color: $color-track !important;
+            height: $track-height;
+
+            .ui-slider-handle {
+                margin-left: -0.1rem;
+                width: $thumb-width;
+                height: $thumb-height;
+                border-radius: 50%;
+                border: none;
+                background-color: $color-thumb;
+                box-shadow: 0 0 8px rgba(40, 75, 68, 0.25);
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    margin-right: 0.5rem;
+                    top: 0;
+                    left: 0;
+                    width: 1000px;
+                    height: $track-height;
+                    box-shadow: -1000px 5px 0 0 $color-progress;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}

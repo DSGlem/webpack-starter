@@ -2,6 +2,7 @@
 @import "./fonts";
 
 @import "./styles/input.scss";
+@import "./styles/range-slider";
 
 @import "./styles/_header";
 @import "./styles/hero";
@@ -22,5 +23,5 @@
 
 @import "./styles/purchase";
 @import "./styles/registration";
-@import "./styles/_registration-personal-data";
-@import "./styles/_registration-credit-deals";
+@import "./styles/registration-personal-data";
+@import "./styles/registration-credit-deals";

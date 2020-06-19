@@ -250,6 +250,7 @@ body {
 .tooltip-trigger {
   position: relative;
   display: inline-block;
+
   .tooltip-content {
     position: absolute;
     top: -70px;
@@ -270,11 +271,13 @@ body {
     font-family: Aeroport;
     font-size: 16px;
   }
+
   &:hover {
     .tooltip-content {
       display: flex;
     }
   }
+
   .tooltip-icon {
     width: 1.1rem;
   }

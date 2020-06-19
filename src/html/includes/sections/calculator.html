@@ -12,29 +12,12 @@
     <div class="calculator-container">
       <div class="calculator-inputs">
         <div class="group debt">
-          <input
-            id="debt"
-            class="input-style amount"
-            placeholder="Сумма задолженности"
-          />
+          <input id="debt" class="input-style amount" placeholder="Сумма задолженности" />
         </div>
         <div class="group debt-type">
-          <!-- <select class="select form-control" id="exampleFormControlSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select> -->
           <div class="dropdown">
-            <div
-              class="btn btn-secondary dropdown-toggle"
-              role="button"
-              id="dropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
+            <div class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               Тип задолжености
             </div>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -56,17 +39,18 @@
           </p>
 
           <div class="range-mark">
-            <span>0</span><span>90</span><span>180-365</span
-            ><span>Более 365</span>
+            <span>0</span><span>90</span><span>180-365</span><span>Более 365</span>
           </div>
-
-          <div id="days"></div>
+          <div class="range-slider-container">
+            <div class="range-slider">
+              <div id="days"></div>
+            </div>
+          </div>
         </div>
         <div class="group installment-lenght">
           <p class="range-placeholder">Рассрочка в месяцах</p>
           <div class="range-mark">
-            <span>0</span><span>3</span><span>6</span><span>9</span
-            ><span>12</span>
+            <span>0</span><span>3</span><span>6</span><span>9</span><span>12</span>
           </div>
 
           <div id="month"></div>

@@ -8,6 +8,6 @@ import "./scripts/review";
 
 import "./scripts/modal";
 
-import "./scripts/rangeInput";
+import "./scripts/range-slider";
 
 import "./scripts/tooltip";
