@@ -3,7 +3,7 @@
   top: -5rem;
 
   .container {
-    @media (min-width: 1200px) {
+    @media (min-width: 991px) {
       display: flex;
     }
   }
@@ -33,7 +33,7 @@
     box-shadow: 0.4rem 0.4rem 3.2rem -0.4rem rgba(40, 75, 68, 0.15);
     border-radius: 0.8rem;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 991px) {
       display: flex;
       justify-content: space-between;
       padding: 4rem;
@@ -61,23 +61,28 @@
         font-size: 1.4rem;
       }
     }
-
+    .input-style.amount {
+      width: 100%;
+    }
     .range-placeholder {
       margin-top: 1rem;
       color: $color-text-title;
       font-size: 2rem;
+
+      display: flex;
+      justify-content: space-between;
     }
   }
 
   .calculator-inputs {
-    @media (min-width: 1200px) {
+    @media (min-width: 991px) {
       padding: 0;
       width: 49%;
     }
   }
 
   .calculator-outputs {
-    @media (min-width: 1200px) {
+    @media (min-width: 991px) {
       width: 46%;
     }
 

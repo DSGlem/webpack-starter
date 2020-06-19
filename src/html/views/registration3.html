@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+_.template(require('./../includes/head.html').default)(data) %>
+
+<html lang="ru">
+  <body>
+    <header class="header-container">
+      <%= _.template(require('./../includes/header.html').default)(data) %>
+    </header>
+    <main class="main-container registration-page">
+      <div class="registration-step credit-deals">
+        <h5 class="section-title registration_title">Контактная информация</h5>
+        <p class="section-text registration-text">
+          Петров Пётр Петрович, осталось совсем немного до завершения
+          регистрации
+        </p>
+        <form class="registration-form">
+          <button class="btn custom-button file-attach" type="file">
+            <span>Продолжить</span>
+          </button>
+          <div class="credit-deals-file">
+            <div class="deals-file-name">name_file.jpg</div>
+            <div class="cross-element remove-file"></div>
+          </div>
+          <button
+            class="btn custom-button registration_form-submit"
+            type="submit"
+          >
+            <span>Отправить</span>
+          </button>
+        </form>
+
+        <div class="step">
+          <p class="group-text">Шаг 3 из 3</p>
+          <div class="progress progress-3"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  </body>
+</html>

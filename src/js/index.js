@@ -9,3 +9,5 @@ import "./scripts/review";
 import "./scripts/modal";
 
 import "./scripts/rangeInput";
+
+import "./scripts/tooltip";

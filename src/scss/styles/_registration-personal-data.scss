@@ -1,27 +1,65 @@
 .contact-info {
-
+  .registration-form {
+    @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wraps;
+    }
+  }
+  .contact-row {
+    margin-top: 1.6rem;
+  }
+  .form-group {
+    margin: 0;
+  }
+  .contact-phones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .form-column {
-        &:not(:first-of-type) {
-            margin-left: 3rem;
-        }
+      margin-top: 1.6rem;
+      @media (min-width: 768px) {
+        margin-top: 0;
+      }
     }
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+  .form-column {
+    @media (min-width: 768px) {
+      &:not(:first-of-type) {
+        margin-left: 3rem;
+      }
+    }
+  }
+  .radio-group {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .registration-form {
-        @media (min-width: 768px) {
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+  .registration-form {
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
     }
+  }
 
-    .registration_submit-wrapper {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+  .registration_submit-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
-    .registration_form-submit {
-        order: 1;
-        width: 26rem;
+  .registration_form-submit {
+    order: 1;
+    width: 26rem;
+  }
+  .home-input {
+    width: 8rem;
+    &:not(:first-of-type) {
+      margin-left: 0.6rem;
     }
+  }
 }

@@ -1,0 +1,40 @@
+.credit-deals {
+  .file-attach {
+    background: none;
+    border: 0.1rem solid $color-accent;
+
+    span {
+      color: $color-accent;
+    }
+  }
+  .credit-deals-file {
+    position: relative;
+    margin-top: 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .remove-file {
+      background-color: $color-input-border;
+    }
+  }
+  .cross-element {
+    &:before,
+    &:after {
+      content: "";
+      display: flex;
+      width: 2.4rem;
+      height: 0.2rem;
+      background-color: inherit;
+      transition: all 0.3s;
+    }
+    &:before {
+      margin-top: -0.2rem;
+      transform: rotate(-45deg);
+    }
+    &:after {
+      margin-top: -0.2rem;
+      transform: rotate(45deg);
+    }
+  }
+}
