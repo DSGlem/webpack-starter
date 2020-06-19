@@ -8,6 +8,7 @@ function setDebtValue() {
   debtValue = Math.floor(sumOfDebt - (sumOfDebt * days) / 100);
   $(".debt-value").text(debtValue + " руб.*");
   $(".payment-in-month").text(paymentInMonth && paymentInMonth + " руб.*");
+  $(".profit").text(sumOfDebt - debtValue + " руб.*");
 }
 
 $("#days").slider({

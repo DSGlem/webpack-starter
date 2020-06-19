@@ -26,21 +26,14 @@
     }
   }
 
-  // .slick-list {
-  //   padding: 2rem;
-  //   margin: 0 3rem;
-  // }
+  .slick-list {
+    padding: 2rem;
+    margin: 0 3rem;
+  }
 
-  // .slick-slide {
-  //   margin-left: 3rem;
-  // }
-
-  // .slick-arrow {
-  //   display: none;
-  //   @media (min-width: 768px) {
-  //     display: block;
-  //   }
-  // }
+  .slick-slide {
+    margin-left: 3rem;
+  }
 
   .card:not(:first-of-type) {
     margin-top: 3rem;

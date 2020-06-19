@@ -1,62 +1,32 @@
-<!-- <div class="modal-layout visible">
-  <div class="modal-container modal-service-purchase">
-    <div class="btn-close"></div>
-    <h5 class="section-title">Покупка услуги</h5>
-    <p class="section-subtitle">Моя гражданская позиция - 299 грн.</p>
-    <p class="section-text">
-      Вы покупаете услугу, после покупки вам нужно будет пройти регистрацию и
-      отправить данные о кредите
-    </p>
-    <form class="modal-form ">
-      <input class="input name" placeholder="ФИО" />
-      <input class="input phone" type="tel" />
-      <button class="btn btn-primary btn-submit" type="submit">
-        Продолжить покупку
-      </button>
-    </form>
-  </div>
-</div> -->
 <!-- Button trigger modal -->
-<button
-  type="button"
-  class="btn btn-primary"
-  data-toggle="modal"
-  data-target="#exampleModal"
->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPurchase">
   Launch demo modal
 </button>
 
 <!-- Modal -->
-<div
-  class="modal fade"
-  id="exampleModal"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
+<div class="modal fade" id="modalPurchase" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <div class="modal-layout visible">
+        <div class="modal-container modal-service-purchase">
+          <div class="btn-close" data-dismiss="modal"></div>
+          <h5 class="section-title">Покупка услуги</h5>
+          <p class="section-subtitle">Моя гражданская позиция - 299 грн.</p>
+          <p class="section-text">
+            Вы покупаете услугу, после покупки вам нужно будет пройти регистрацию и
+            отправить данные о кредите
+          </p>
+          <form class="modal-form ">
+            <input class="input-style name" placeholder="ФИО" />
+            <input class="input-style phone" type="tel" />
+            <button class="btn custom-button btn-submit" type="submit">
+              Продолжить покупку
+            </button>
+          </form>
+        </div>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">
-          Close
-        </button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+
     </div>
   </div>
 </div>
