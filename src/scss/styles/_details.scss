@@ -5,19 +5,28 @@
   max-width: 148rem;
   margin: 0 1.5rem;
   padding: 2.8rem 5.7rem;
-  transform: translateY(-50%);
+  margin-top: -10rem;
   border-radius: 1.6rem;
   background-color: #13bf9c;
+
+  @media (min-width: 582px) {
+    margin-top: -8.5rem;
+  }
 
   @media (min-width: 992px) {
     flex-direction: row;
     justify-content: space-between;
+
+    margin-top: -5rem;
   }
+
   @media (min-width: 1200px) {
     padding: 5.7rem 18.7rem;
   }
+
   @media (min-width: 1300px) {
     margin: 0 auto;
+    margin-top: -9rem;
   }
 
   .text {
@@ -29,7 +38,7 @@
     line-height: 1.125em;
 
     @media (min-width: 1300px) {
-      font-family: "Aeroport Medium";
+       
       font-size: 4.8rem;
       font-weight: 500;
     }
@@ -38,6 +47,7 @@
   .btn-more {
     margin-top: 2rem;
     background-color: $color-bg;
+
     span {
       color: #13bf9c;
     }

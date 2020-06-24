@@ -1,6 +1,7 @@
 .calculator {
   position: relative;
-  top: -5rem;
+  margin: 5rem 0 4rem 0;
+  background-color: $color-bg;
 
   .container {
     @media (min-width: 991px) {
@@ -61,9 +62,11 @@
         font-size: 1.4rem;
       }
     }
+
     .input-style.amount {
       width: 100%;
     }
+
     .range-placeholder {
       margin-top: 1rem;
       color: $color-text-title;
@@ -112,7 +115,7 @@
 
     .total {
       .placeholder {
-        font-family: "Aeroport Medium";
+         
       }
 
       font-size: 1.8rem;
