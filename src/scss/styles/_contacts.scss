@@ -1,45 +1,60 @@
 .contacts-wrapper {
   background-color: $color-bg-secondary;
 }
+
 .contacts {
   margin: 0 auto;
   padding: 5rem 0;
+
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .text {
     margin: 0 1.5rem;
     max-width: 26rem;
+
     @media (min-width: 768px) {
       margin-top: 3rem;
+      margin-left: 4rem;
+    }
+
+    @media (min-width: 1200px) {
       margin-left: 26rem;
     }
   }
+
   .section-title {
     margin-bottom: 2.5rem;
   }
+
   .info-container {
     &:not(:first-of-type) {
       margin-top: 1.5rem;
+
       @media (min-width: 768px) {
         margin-top: 3rem;
       }
     }
   }
+
   .label {
     color: $color-text-title;
     font-size: 1.4rem;
     margin-bottom: 0;
+
     @media (min-width: 768px) {
       font-size: 1.6rem;
     }
   }
+
   .value {
     color: $color-text-title;
     font-family: "Aeroport Medium";
     font-size: 1.8rem;
+
     @media (min-width: 768px) {
       font-size: 2rem;
     }
@@ -47,8 +62,18 @@
 
   .map {
     margin-top: 3.4rem;
+
+    .google-map {
+      height: 28rem;
+
+      @media (min-width: 768px) {
+        height: 60rem;
+      }
+    }
+
     @media (min-width: 768px) {
       width: 50%;
+      height: auto;
     }
   }
 }

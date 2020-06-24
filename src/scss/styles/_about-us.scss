@@ -38,22 +38,19 @@
     }
 
     .section-title {
-      margin-top: 1rem;
       @media (max-width: 1200px) {
         font-size: 2.8rem;
       }
     }
 
     .section-text {
-      margin-top: 1.6rem;
-
-      // max-width: 34.5rem;
       @media (min-width: 992px) {
         max-width: 44.5rem;
       }
     }
+
     .about-btn-box {
-      margin-top: 4rem;
+      margin-top: 3rem;
     }
   }
 }

@@ -2,19 +2,24 @@
   padding-top: 5rem;
   padding-bottom: 9rem;
   background-color: $color-bg-secondary;
+
   @media (min-width: 992px) {
     padding-top: 10rem;
     padding-bottom: 11rem;
   }
+
   .container {
     position: relative;
   }
+
   .section-subtitle {
     margin-top: 1.5rem;
     color: $color-text-secondary;
     font-size: 1.4rem;
     line-height: 1.57em;
     text-transform: none;
+    letter-spacing: 0;
+
     @media (min-width: 992px) {
       font-size: 1.6rem;
     }
@@ -25,24 +30,29 @@
     color: #626262;
     font-size: 1.6rem;
     line-height: 1.5em;
+
     @media (min-width: 992px) {
       font-size: 2rem;
       line-height: 1.4em;
     }
+
     .comment-decor {
       position: absolute;
-      top: 0;
+      top: -1rem;
       width: 13.5rem;
     }
   }
+
   .reviewer {
     margin-top: 2.6rem;
     display: flex;
     align-items: center;
   }
+
   .reviewer-image {
     width: 6.4rem;
   }
+
   .reviewer-name {
     margin-left: 3rem;
     color: $color-text-title;

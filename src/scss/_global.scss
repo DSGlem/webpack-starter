@@ -22,6 +22,7 @@ body {
   font-size: 1.6rem;
   font-family: "Aeroport", "sans-serif";
 }
+
 a {
   &:hover {
     text-decoration: none;
@@ -33,6 +34,8 @@ a {
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 1.125em;
+  margin-top: 1.3rem;
+  margin-bottom: 2.4rem;
 
   @media (min-width: 1200px) {
     font-family: "Aeroport Medium";
@@ -41,11 +44,23 @@ a {
 }
 
 .pattern {
-  width: 19.6rem;
+  width: 11.6rem;
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(-3.5rem) translateX(-4rem);
+  top: -4rem;
+  left: -5.5rem;
+  -webkit-clip-path: inset(1%0 0 20% 0);
+  clip-path: inset(10% 0 20% 0);
+
+
+  @media (min-width: 992px) {
+    width: 19.6rem;
+    top: 0;
+    left: 0;
+    transform: translateY(-3.5rem) translateX(-4rem);
+
+    -webkit-clip-path: unset;
+    clip-path: unset;
+  }
 }
 
 .section-subtitle {
@@ -54,9 +69,10 @@ a {
   font-size: 1.2rem;
   letter-spacing: 0.16rem;
   text-transform: uppercase;
+  margin: 0;
 
   .pattern {
-    display: none;
+    // display: none;
 
     @media (min-width: 1200px) {
       display: block;
@@ -126,6 +142,10 @@ a {
     color: $color-text-secondary;
     font-family: "Aeroport Medium";
     font-size: 1.8rem;
+
+    &:hover {
+      color: $color-text-primary;
+    }
 
     &:not(:first-of-type) {
       margin-left: 4rem;
