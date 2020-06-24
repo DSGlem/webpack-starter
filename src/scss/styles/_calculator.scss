@@ -4,8 +4,18 @@
   background-color: $color-bg;
 
   .container {
+    position: relative;
+
     @media (min-width: 991px) {
       display: flex;
+    }
+
+    .pattern {
+      z-index: -1;
+      position: absolute;
+      right: 0;
+      top: 0;
+      left: unset;
     }
   }
 
@@ -28,6 +38,8 @@
   }
 
   .calculator-container {
+    position: relative;
+    z-index: 2;
     margin-top: 3rem;
     padding: 3rem 1.5rem;
 
@@ -114,9 +126,7 @@
     }
 
     .total {
-      .placeholder {
-         
-      }
+      .placeholder {}
 
       font-size: 1.8rem;
     }
