@@ -40,6 +40,18 @@
       position: absolute;
       top: -1rem;
       width: 13.5rem;
+
+      @media (min-width: 768px) {
+        top: 6rem;
+        width: 13.5rem;
+        left: 0rem;
+      }
+    }
+  }
+
+  .review {
+    @media (min-width: 768px) {
+      padding-left: 7.3rem;
     }
   }
 
@@ -56,7 +68,7 @@
   .reviewer-name {
     margin-left: 3rem;
     color: $color-text-title;
-     
+
     font-size: 2rem;
     font-weight: 500;
   }
