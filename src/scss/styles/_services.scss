@@ -56,9 +56,19 @@
     box-shadow: 0.4rem 0.4rem 3.2rem -0.4rem rgba(40, 75, 68, 0.15);
     border-radius: 0.8rem;
     border: none;
+    height: 475px;
 
     @media (min-width: 768px) {
       margin: 0;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      .custom-button {
+        margin-top: auto;
+      }
     }
 
     .card-title {
@@ -95,5 +105,4 @@
   .service-info {
     margin-top: 1.5rem;
   }
-
 }

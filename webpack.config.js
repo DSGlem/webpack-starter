@@ -107,6 +107,10 @@ const config = {
           from: "./src/img",
           to: "./img",
         },
+        {
+          from: "./src/pdf",
+          to: "./pdf",
+        },
       ],
     }),
   ].concat(htmlPlugins),

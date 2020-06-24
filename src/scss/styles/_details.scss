@@ -16,8 +16,8 @@
   @media (min-width: 992px) {
     flex-direction: row;
     justify-content: space-between;
-
-    margin-top: -5rem;
+    height: 18rem;
+    margin-top: -9rem;
   }
 
   @media (min-width: 1200px) {
@@ -38,7 +38,6 @@
     line-height: 1.125em;
 
     @media (min-width: 1300px) {
-       
       font-size: 4.8rem;
       font-weight: 500;
     }

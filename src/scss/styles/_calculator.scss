@@ -1,26 +1,38 @@
 .calculator {
   position: relative;
   margin: 5rem 0 4rem 0;
-  background-color: $color-bg;
 
-  .container {
+  @media (min-width: 992px) {
+    margin: 5rem 0 12rem 0;
+  }
+  .content-box {
     position: relative;
-
+    z-index: 10;
     @media (min-width: 991px) {
       display: flex;
-    }
-
-    .pattern {
-      z-index: -1;
-      position: absolute;
-      right: 0;
-      top: 0;
-      left: unset;
+      justify-content: space-between;
     }
   }
-
+  .calc-pattern {
+    z-index: 1;
+    position: absolute;
+    right: 0%;
+    top: 170px;
+    width: 120px;
+    @media (min-width: 992px) {
+      width: 200px;
+      right: 7%;
+      top: 0;
+    }
+  }
   .description {
     align-self: center;
+    position: relative;
+    z-index: 10;
+    max-width: 300px;
+    @media (min-width: 992px) {
+      margin-right: 82px;
+    }
   }
 
   .section-text {
@@ -39,10 +51,10 @@
 
   .calculator-container {
     position: relative;
-    z-index: 2;
+    z-index: 10;
     margin-top: 3rem;
     padding: 3rem 1.5rem;
-
+    background-color: $color-bg;
     box-shadow: 0.4rem 0.4rem 3.2rem -0.4rem rgba(40, 75, 68, 0.15);
     border-radius: 0.8rem;
 
@@ -96,13 +108,19 @@
     }
   }
 
-  .calculator-outputs {
-    @media (min-width: 991px) {
-      width: 46%;
+  .delay-value {
+    @media (min-width: 992px) {
+      margin-top: 30px;
     }
-
+  }
+  .calculator-outputs {
     margin-top: 1.5rem;
     font-size: 1.6rem;
+    @media (min-width: 991px) {
+      margin-left: 5rem;
+      margin-top: 0;
+      width: 45%;
+    }
 
     .output-item {
       display: flex;
@@ -126,10 +144,11 @@
     }
 
     .total {
-      .placeholder {}
-
       font-size: 1.8rem;
     }
+  }
+  .calculator-btn-box {
+    margin-top: 36px;
   }
 
   .note {
@@ -137,5 +156,8 @@
     margin-left: 1.5rem;
     color: $color-text-secondary;
     font-size: 1.4rem;
+    @media (min-width: 992px) {
+      margin-left: 0;
+    }
   }
 }

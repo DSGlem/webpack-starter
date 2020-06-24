@@ -3,7 +3,7 @@
   background-color: #f6f7f8;
 
   @media (min-width: 992px) {
-    padding: 11rem 10rem 21rem 10rem;
+    padding: 11rem 10rem 19rem 10rem;
   }
 
   @media (min-width: 1200px) {
@@ -11,7 +11,6 @@
   }
 
   .col-xl-3 {
-
     //sorry for this
     @media (min-width: 1200px) {
       flex: 0 0 50%;
@@ -31,24 +30,12 @@
     }
   }
 
-  .row {
-    margin-top: 3.3rem;
-
-    @media (min-width: 768px) {
-      margin-bottom: 10rem;
-    }
-
-    @media (min-width: 992px) {
-      margin-top: 5rem;
-      margin-bottom: 5rem;
-    }
-  }
-
   .section-title {
     text-align: center;
 
     @media (min-width: 992px) {
       text-align: left;
+      margin-bottom: 5rem;
     }
   }
 
