@@ -29,6 +29,12 @@ a {
   }
 }
 
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
 .section-title {
   color: $color-text-title;
   font-size: 3.2rem;
