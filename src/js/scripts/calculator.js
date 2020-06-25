@@ -1,27 +1,24 @@
 //initial value
 let sumOfDebt = 0;
-let days = 0;
+let willBeCharged = 0;
 let debtValue = 0;
 let paymentInMonth = 0;
 
 function setDebtValue() {
-  debtValue = Math.floor(sumOfDebt - (sumOfDebt * days) / 100);
+  debtValue = Math.floor(sumOfDebt - (sumOfDebt * willBeCharged) / 100);
   $(".debt-value").text(debtValue + " руб.*");
-  $(".payment-in-month").text(paymentInMonth && paymentInMonth + " руб.*");
+  $(".payment-in-month").text(paymentInMonth + " руб.*");
   $(".profit").text(sumOfDebt - debtValue + " руб.*");
 }
 
 $("#days").slider({
-  max: 80,
+  max: 366,
   create: function () {
-    $(".output-percent").text($(this).slider("value") + " %");
+    $(".output-percent").text("0%");
   },
   slide: function (event, ui) {
-    $(".output-percent").text(ui.value + " %");
-
-    // Остаток по долгу
-    sumOfDebt = $("#debt").val();
-    days = ui.value;
+    willBeCharged = ui.value < 360 ? 70 : 80;
+    $(".output-percent").text(willBeCharged + " %");
     setDebtValue();
   },
 });
@@ -39,7 +36,6 @@ $("#month").slider({
     $(".installment-plan").text($(this).slider("value"));
   },
   slide: function (event, ui) {
-    // console.log(ui.value);s
     $(".installment-plan").text(ui.value);
     paymentInMonth = Math.floor(debtValue / ui.value);
     setDebtValue();
